@@ -13,13 +13,6 @@ module Fluent
 
       Fluent::Plugin.register_filter('filter_syslog_security', self)
 
-      # def initialize
-      #   super
-      #   # require_relative("omslog")
-      #   # require_relative("oms_common")
-      #   # require_relative("security_lib")
-      # end
-
       config_param(:ip_cache_refresh_interval, :integer, default: 300)
 
       # Interval in seconds to refresh the cache
