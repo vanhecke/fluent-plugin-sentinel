@@ -28,6 +28,7 @@ module Fluent
 
         tags = tag.split('.')
 
+        # TODO: Investigate next comment
         # Use Time.now, because it is the only way to get subsecond precision in version 0.12.
         # The time may be slightly in the future from the ingestion time.
         new_record = {
